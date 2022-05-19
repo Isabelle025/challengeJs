@@ -6,6 +6,40 @@
     color: hsl(228, 45%, 44%); 
 }
 
+
+body{
+    width: 1440px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: black;
+    font-weight: 700;
+}
+
+#paragraph{
+    font-size: 1rem;
+}
+
+.left{
+    margin-left: 2.5rem;
+    width: 50%;
+}
+
+.right{
+    width: 50%;
+    margin-left: 3.125rem;
+}
+
+=======
 /*Formulaire*/
 
 .free {
@@ -20,3 +54,4 @@
     border-width: 1px;
     border-radius: .3125rem;
 }
+
