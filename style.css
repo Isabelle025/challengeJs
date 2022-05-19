@@ -13,6 +13,7 @@ body{
 }
 
 /*fond de la page*/
+
 .container{
     background-color: #ff7a7a;
     background-image: url(images/bg-intro-desktop.png);
@@ -20,6 +21,7 @@ body{
 }
 
 /*ensemble des deux colonnes de gauche et de droite*/
+
 .columns{
     display: flex;
     justify-content: space-around;
@@ -29,6 +31,7 @@ body{
 
 
 /*titre de la colonne de gauche*/
+
 .title{
     font-family: 'Poppins', sans-serif;
     font-size: 2.5rem;
@@ -37,6 +40,7 @@ body{
 }
 
 /*paragraphe en-dessous du titre de la colonne de gauche*/
+
 .paragraph{
     font-size: 1rem;
     color: white;
@@ -44,6 +48,7 @@ body{
 }
 
 /*colonne de gauche*/
+
 .left{
     display: flex;
     flex-direction: column;
@@ -55,6 +60,7 @@ body{
 }
 
 /*colonne de droite*/
+
 .right{
     width: 50%;
     padding-top: 6.25rem;
@@ -110,3 +116,30 @@ span {
     padding-left: 1.25rem;
 }
 
+/* Voici la mise en forme pour les erreurs */
+
+input:invalid{
+    border-color: #900;
+    background-color: #FDD;
+}
+  
+input:focus:invalid {
+    outline: none;
+}
+  
+.error {
+    width  : 100%;
+    padding: 0;
+  
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+  
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+  
+.error.active {
+    padding: 0.3em;
+}
