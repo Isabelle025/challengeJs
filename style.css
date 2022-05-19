@@ -30,7 +30,10 @@ body{
     margin-top: 6.25rem;
 }
 
+
 /*titre de la colonne de gauche*/
+
+
 .title{
     font-family: 'Poppins', sans-serif;
     font-size: 2.5rem;
@@ -59,8 +62,8 @@ body{
 /*Formulaire*/
 
 .free {
-    background-color: #4CAF50;
-    border-color: #4CAF50;
+    background-color: hsl(154, 59%, 51%);
+    border-color: hsl(154, 59%, 51%);
     border-radius: .3125rem;
 
 }
@@ -69,5 +72,8 @@ body{
     border-color:  #92a289;
     border-width: 1px;
     border-radius: .3125rem;
+    font-weight:550;
+    color: #191a18;
+    height:40px ;
 }
 
