@@ -13,33 +13,46 @@ body{
     box-sizing: border-box;
 }
 
+/*fond de la page*/
 .container{
-    display: flex;
-    justify-content: space-around;
+    background-color: #ff7a7a;
+    background-image: url(images/bg-intro-desktop.png);
+    height: 500px;
 }
 
+/*ensemble des deux colonnes de gauche et de droite*/
+.columns{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6.25rem;
+}
+
+/*titre de la colonne de gauche*/
 .title{
     font-family: 'Poppins', sans-serif;
     font-size: 2.5rem;
-    color: black;
+    color: white;
     font-weight: 700;
 }
 
-#paragraph{
+/*paragraphe en-dessous du titre de la colonne de gauche*/
+.paragraph{
     font-size: 1rem;
+    color: white;
 }
 
+/*colonne de gauche*/
 .left{
-    margin-left: 2.5rem;
+    margin: 6.25rem auto auto 40px;
     width: 50%;
 }
 
+/*colonne de droite*/
 .right{
     width: 50%;
     margin-left: 3.125rem;
 }
 
-=======
 /*Formulaire*/
 
 .free {
