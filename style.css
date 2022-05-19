@@ -6,11 +6,17 @@
     color: hsl(228, 45%, 44%); 
 }
 
-input  {
-border-radius: 0px;
+/*Formulaire*/
+
+.free {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+    border-radius: .3125rem;
 
 }
 
-.claim {
-
+.formule {
+    border-color:  #92a289;
+    border-width: 1px;
+    border-radius: .3125rem;
 }
