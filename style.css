@@ -16,7 +16,7 @@ body{
 .container{
     background-color: #ff7a7a;
     background-image: url(images/bg-intro-desktop.png);
-    height: 500px;
+    height: 600px;
 }
 
 /*ensemble des deux colonnes de gauche et de droite*/
@@ -40,7 +40,7 @@ body{
 .paragraph{
     font-size: 1rem;
     color: white;
-    padding-right: 6.25rem;
+    padding-right: 4.375rem;
 }
 
 /*colonne de gauche*/
@@ -51,6 +51,7 @@ body{
     justify-content: center;
     width: 50%;
     padding-top: 6.875rem;
+    padding-left: 6.25rem;
 }
 
 /*colonne de droite*/
@@ -87,13 +88,15 @@ body{
 span {
     font-weight: 400;
 }
+
 .free {
     background-color: hsl(154, 59%, 51%);
     border-color: hsl(154, 59%, 51%);
     border-radius: .3125rem;
     width: 400px;
     height: 40px;
-
+    color: white;
+    font-weight: bold;
 }
 
 .formule {
@@ -104,5 +107,6 @@ span {
     color: #191a18;
     height:40px ;
     width: 400px;
+    padding-left: 1.25rem;
 }
 
