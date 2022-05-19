@@ -6,6 +6,7 @@
     color: hsl(228, 45%, 44%); 
 }
 
+
 body{
     width: 1440px;
     height: auto;
@@ -36,5 +37,21 @@ body{
 .right{
     width: 50%;
     margin-left: 3.125rem;
+}
+
+=======
+/*Formulaire*/
+
+.free {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+    border-radius: .3125rem;
+
+}
+
+.formule {
+    border-color:  #92a289;
+    border-width: 1px;
+    border-radius: .3125rem;
 }
 
