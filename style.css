@@ -110,3 +110,62 @@ span {
     padding-left: 1.25rem;
 }
 
+@media only screen and (min-width: 375px) {
+   
+body{
+    margin: 0px;
+    width: 375px;
+}
+.container{
+    width: 100%;
+    height: auto;
+    padding: 1.875rem .9375rem 1.875rem .9375rem;
+}
+
+.columns{
+    margin-top: 0px;
+    flex-direction: column;
+    gap: 0px;
+    width: 90%;
+}
+
+.left{
+    flex-direction: column;
+    width: 90%;
+    padding: 0px;
+    margin-left: 40px;
+}
+
+.title{
+    text-align: center;
+    margin-right: 30px;
+    font-size: 2rem;
+}
+
+.paragraph{
+    padding-right: 0px;
+    margin: 0rem 2.5rem 1rem 2.5rem;
+    text-align: center;
+}
+
+.right{
+    width: 100%;
+    padding-top: 20px;
+}
+.price{
+    width: 330px;
+}
+
+.formulaire{
+    width: 330px;
+}
+
+.formule{
+    width: 290px;
+}
+
+.free{
+    width: 290px;
+}
+
+}
