@@ -6,10 +6,6 @@
     color: hsl(228, 45%, 44%); 
 }
 
-
-
-
-
 body{
     width: 1440px;
     height: auto;
@@ -28,12 +24,11 @@ body{
     display: flex;
     justify-content: space-around;
     margin-top: 6.25rem;
+    gap: 3.125rem;
 }
 
 
 /*titre de la colonne de gauche*/
-
-
 .title{
     font-family: 'Poppins', sans-serif;
     font-size: 2.5rem;
@@ -45,18 +40,23 @@ body{
 .paragraph{
     font-size: 1rem;
     color: white;
+    padding-right: 6.25rem;
 }
 
 /*colonne de gauche*/
 .left{
-    margin: 6.25rem auto auto 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 50%;
+    padding-top: 6.875rem;
 }
 
 /*colonne de droite*/
 .right{
     width: 50%;
-    margin-left: 3.125rem;
+    padding-top: 6.25rem;
 }
 
 /*Formulaire*/
