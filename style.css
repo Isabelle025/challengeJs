@@ -68,17 +68,21 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 5px;
 }
 
 .price {
     background-color: hsl(246, 67%, 56%) ;
     border-color: hsl(246, 67%, 56%);
-    border-width: 300px;
+    border-width: 400px;
     border-radius: 5px;
-    width: 300px;
-    margin-left: 10px;
+    width: 600px;
+    padding-top: 20px;
+   padding-bottom: 20px;
+   text-align: center;
     font-weight: bold;
     color: #FFFFFF;
+
 }
 
 span {
@@ -89,7 +93,7 @@ span {
     background-color: hsl(154, 59%, 51%);
     border-color: hsl(154, 59%, 51%);
     border-radius: .3125rem;
-    width: 300px;
+    width: 400px;
     height: 40px;
 
 }
@@ -101,6 +105,6 @@ span {
     font-weight:550;
     color: #191a18;
     height:40px ;
-    width: 300px;
+    width: 400px;
 }
 
