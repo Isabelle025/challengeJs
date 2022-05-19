@@ -16,7 +16,7 @@ body{
 .container{
     background-color: #ff7a7a;
     background-image: url(images/bg-intro-desktop.png);
-    height: 500px;
+    height: 600px;
 }
 
 /*ensemble des deux colonnes de gauche et de droite*/
@@ -51,6 +51,7 @@ body{
     justify-content: center;
     width: 50%;
     padding-top: 6.875rem;
+    padding-left: 6.25rem;
 }
 
 /*colonne de droite*/
@@ -61,7 +62,7 @@ body{
 
 /*Formulaire*/
 
-.right {
+.formulaire {
     background-color: #FFFFFF;
     justify-content: center;
     display: flex;
@@ -83,6 +84,7 @@ body{
 span {
     font-weight: 400;
 }
+
 .free {
     background-color: hsl(154, 59%, 51%);
     border-color: hsl(154, 59%, 51%);
@@ -102,4 +104,3 @@ span {
     width: 300px;
 }
 
-=
