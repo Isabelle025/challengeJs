@@ -13,7 +13,6 @@ body{
 }
 
 /*fond de la page*/
-
 .container{
     background-color: #ff7a7a;
     background-image: url(images/bg-intro-desktop.png);
@@ -21,7 +20,6 @@ body{
 }
 
 /*ensemble des deux colonnes de gauche et de droite*/
-
 .columns{
     display: flex;
     justify-content: space-around;
@@ -31,7 +29,6 @@ body{
 
 
 /*titre de la colonne de gauche*/
-
 .title{
     font-family: 'Poppins', sans-serif;
     font-size: 2.5rem;
@@ -40,7 +37,6 @@ body{
 }
 
 /*paragraphe en-dessous du titre de la colonne de gauche*/
-
 .paragraph{
     font-size: 1rem;
     color: white;
@@ -48,7 +44,6 @@ body{
 }
 
 /*colonne de gauche*/
-
 .left{
     display: flex;
     flex-direction: column;
@@ -60,7 +55,6 @@ body{
 }
 
 /*colonne de droite*/
-
 .right{
     width: 50%;
     padding-top: 6.25rem;
@@ -116,90 +110,82 @@ span {
     padding-left: 1.25rem;
 }
 
-/* Voici la mise en forme pour les erreurs */
 
-input:invalid{
-    border-color: #900;
-    background-color: #FDD;
-}
-  
-input:focus:invalid {
-    outline: none;
-}
-  
-.error {
-    width  : 100%;
-    padding: 0;
-  
-    font-size: 80%;
-    color: white;
-    background-color: #900;
-    border-radius: 0 0 5px 5px;
-  
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-  
-.error.active {
-    padding: 0.3em;
-}
-
-@media only screen and (min-width: 375px) {
+@media screen and (max-width: 380px) {
    
-    body{
+body{
         margin: 0px;
         width: 375px;
     }
-    .container{
-        width: 100%;
-        height: auto;
-        padding: 1.875rem .9375rem 1.875rem .9375rem;
+    
+.container{
+        width: 90%;
+        height: 850px;
+        padding: 3.125rem 1.875rem 0rem 0rem;
     }
     
-    .columns{
+.columns{
         margin-top: 0px;
         flex-direction: column;
         gap: 0px;
         width: 90%;
     }
     
-    .left{
+.left{
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         padding: 0px;
         margin-left: 40px;
     }
     
-    .title{
+.title{
         text-align: center;
         margin-right: 30px;
         font-size: 2rem;
     }
     
-    .paragraph{
-        padding-right: 0px;
-        margin: 0rem 2.5rem 1rem 2.5rem;
+.paragraph{
+        padding: 0;
         text-align: center;
     }
     
-    .right{
-        width: 100%;
-        padding-top: 20px;
+.right{
+        padding: 1.25rem 0rem 0rem 1.25rem;
+        
     }
-    .price{
+
+.price{
+        width: 125%;
+        padding: 1.25rem 4.375rem 1.25rem 4.375rem;
+        box-shadow: 5px 5px 5px #b1acdc;
+    }
+    
+.formulaire{
         width: 330px;
     }
     
-    .formulaire{
-        width: 330px;
-    }
-    
-    .formule{
+.formule{
         width: 290px;
     }
     
-    .free{
+.free{
         width: 290px;
     }
-    
+
+.info{
+        text-align: center;
+        color: #b1acdc;
     }
+
+.info > a{
+    color: hsl(0, 100%, 74%);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+footer{ 
+    display: none;
+}
+    }
+    
