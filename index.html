@@ -30,8 +30,8 @@
   
 
     <form>
-    <p><input class="formule" type="text" name="pseudo" placeholder="First Name" required></p> 
-    <p><input class="formule" type="text" name="pseudo2" placeholder="Last Name" required></p> 
+    <p><input class="formule" type="text" required pattern="[A-Za-z]+" minlength="3" name="pseudo" placeholder="First Name" required></p> 
+    <p><input class="formule" type="text" required pattern="[A-Za-z]+" name="pseudo2" placeholder="Last Name" required></p> 
     <p><input class="formule" type="email" name="mail" placeholder="Email Address" required></p> 
     <p><input class="formule" type="password" name="password" placeholder="Password" required></p>
 

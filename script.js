@@ -1,25 +1,51 @@
-var form  = document.getElementsByTagName('form')[0];
-var form = document.getElementById('mail');
-var error = document.querySelector('.error');
-email.addEventListener("input", function (event) {
-    // Chaque fois que l'utilisateur saisit quelque chose
-    // on vérifie la validité du champ e-mail.
-    if (email.validity.valid) {
-      // S'il y a un message d'erreur affiché et que le champ
-      // est valide, on retire l'erreur
-      error.innerHTML = ""; // On réinitialise le contenu
-      error.className = "error"; // On réinitialise l'état visuel du message
+const form = document.getElementById("form")
+const button = document.getElementById("button")
+const all_input = document.querySelectorAll(".case")
+button.addEventListener("click", validate)
+
+
+
+function validate() {
+
+  all_input.forEach(element => {
+    console.log(element)
+    const span = document.createElement("SPAN");
+    const message = document.createTextNode(`${element.id} cannot be empty`)
+    span.appendChild(message);
+
+    if (element.validity.valueMissing) {
+      element.setAttribute("class", "form_input_invalid case");
+
+      form.replaceChild(span, element.nextSibling);
+      span.setAttribute("id", element.id+"_invalid");
+      span.setAttribute("class", "form_span_invalid");
+  } else {
+      element.removeAttribute("class", "form_input_invalid");
+      element_spanInvalid = document.getElementById(element.id+"_invalid");
+      if (element_spanInvalid) {
+          element_spanInvalid.remove();
+      }
     }
-  }, false);
-  form.addEventListener("submit", function (event) {
-    // Chaque fois que l'utilisateur tente d'envoyer les données
-    // on vérifie que le champ email est valide.
-    if (!email.validity.valid) {
+
+  // console.log(document.getElementById("name").validity)
+});
   
-      // S'il est invalide, on affiche un message d'erreur personnalisé
-      error.innerHTML = "J'attends une adresse e-mail correcte, mon cher&nbsp;!";
-      error.className = "error active";
-      // Et on empêche l'envoi des données du formulaire
-      event.preventDefault();
+let input = document.getElementById("Email");
+if (input.validity.typeMismatch) {
+    const email_span = document.createElement("SPAN");
+    const email_span_text = document.createTextNode("Looks like this is not an email");
+    email_span.appendChild(email_span_text);    
+
+    input.setAttribute("class", "form_input_invalid");
+    form.replaceChild(email_span, input.nextSibling);
+    email_span.setAttribute("id", "form_email_invalid_type");
+    email_span.setAttribute("class", "form_span_invalid");
+} else {
+    email_spanInvalid = document.getElementById('form_email_invalid_type');
+    if (email_spanInvalid) {
+      input.removeAttribute("class", "form_input_invalid");
+      email_spanInvalid.remove();
     }
-  }, false);
+}
+
+}
