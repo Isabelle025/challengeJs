@@ -110,62 +110,82 @@ span {
     padding-left: 1.25rem;
 }
 
-@media only screen and (min-width: 375px) {
+
+@media screen and (max-width: 380px) {
    
 body{
-    margin: 0px;
-    width: 375px;
-}
+        margin: 0px;
+        width: 375px;
+    }
+    
 .container{
-    width: 100%;
-    height: auto;
-    padding: 1.875rem .9375rem 1.875rem .9375rem;
-}
-
+        width: 90%;
+        height: 850px;
+        padding: 3.125rem 1.875rem 0rem 0rem;
+    }
+    
 .columns{
-    margin-top: 0px;
-    flex-direction: column;
-    gap: 0px;
-    width: 90%;
-}
-
+        margin-top: 0px;
+        flex-direction: column;
+        gap: 0px;
+        width: 90%;
+    }
+    
 .left{
-    flex-direction: column;
-    width: 90%;
-    padding: 0px;
-    margin-left: 40px;
-}
-
+        flex-direction: column;
+        width: 100%;
+        padding: 0px;
+        margin-left: 40px;
+    }
+    
 .title{
-    text-align: center;
-    margin-right: 30px;
-    font-size: 2rem;
-}
-
+        text-align: center;
+        margin-right: 30px;
+        font-size: 2rem;
+    }
+    
 .paragraph{
-    padding-right: 0px;
-    margin: 0rem 2.5rem 1rem 2.5rem;
-    text-align: center;
-}
-
+        padding: 0;
+        text-align: center;
+    }
+    
 .right{
-    width: 100%;
-    padding-top: 20px;
-}
+        padding: 1.25rem 0rem 0rem 1.25rem;
+        
+    }
+
 .price{
-    width: 330px;
-}
-
+        width: 125%;
+        padding: 1.25rem 4.375rem 1.25rem 4.375rem;
+        box-shadow: 5px 5px 5px #b1acdc;
+    }
+    
 .formulaire{
-    width: 330px;
-}
-
+        width: 330px;
+    }
+    
 .formule{
-    width: 290px;
-}
-
+        width: 290px;
+    }
+    
 .free{
-    width: 290px;
+        width: 290px;
+    }
+
+.info{
+        text-align: center;
+        color: #b1acdc;
+    }
+
+.info > a{
+    color: hsl(0, 100%, 74%);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12px;
 }
 
+footer{ 
+    display: none;
 }
+    }
+    
