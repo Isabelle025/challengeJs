@@ -1,0 +1,194 @@
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+body{
+    width: 1440px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+/*fond de la page*/
+.container{
+    background-color: #ff7a7a;
+    background-image: url(images/bg-intro-desktop.png);
+    height: 600px;
+}
+
+/*ensemble des deux colonnes de gauche et de droite*/
+.columns{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6.25rem;
+    gap: 3.125rem;
+}
+
+
+/*titre de la colonne de gauche*/
+.title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 700;
+}
+
+/*paragraphe en-dessous du titre de la colonne de gauche*/
+.paragraph{
+    font-size: 1rem;
+    color: white;
+    padding-right: 4.375rem;
+}
+
+/*colonne de gauche*/
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding-top: 6.875rem;
+    padding-left: 6.25rem;
+}
+
+/*colonne de droite*/
+.right{
+    width: 50%;
+    padding-top: 6.25rem;
+}
+
+/*Formulaire*/
+
+.formulaire {
+    background-color: #FFFFFF;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.price {
+    background-color: hsl(246, 67%, 56%) ;
+    border-color: hsl(246, 67%, 56%);
+    border-width: 400px;
+    border-radius: 5px;
+    width: 600px;
+    padding-top: 20px;
+   padding-bottom: 20px;
+   text-align: center;
+    font-weight: bold;
+    color: #FFFFFF;
+
+}
+
+span {
+    font-weight: 400;
+}
+
+.free {
+    background-color: hsl(154, 59%, 51%);
+    border-color: hsl(154, 59%, 51%);
+    border-radius: .3125rem;
+    width: 400px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+.formule {
+    border-color:  #92a289;
+    border-width: 1px;
+    border-radius: .3125rem;
+    font-weight:550;
+    color: #191a18;
+    height:40px ;
+    width: 400px;
+    padding-left: 1.25rem;
+}
+/*TEST*/
+
+
+@media screen and (max-width: 380px) {
+   
+body{
+        margin: 0px;
+        width: 375px;
+    }
+    
+.container{
+        width: 90%;
+        height: 850px;
+        padding: 3.125rem 1.875rem 0rem 0rem;
+    }
+    
+.columns{
+        margin-top: 0px;
+        flex-direction: column;
+        gap: 0px;
+        width: 90%;
+    }
+    
+.left{
+        flex-direction: column;
+        width: 100%;
+        padding: 0px;
+        margin-left: 40px;
+    }
+    
+.title{
+        text-align: center;
+        margin-right: 30px;
+        font-size: 2rem;
+    }
+    
+.paragraph{
+        padding: 0;
+        text-align: center;
+    }
+    
+.right{
+        padding: 1.25rem 0rem 0rem 1.25rem;
+        
+    }
+
+.price{
+        width: 125%;
+        padding: 1.25rem 4.375rem 1.25rem 4.375rem;
+        box-shadow: 5px 5px 5px #b1acdc;
+    }
+    
+.formulaire{
+        width: 330px;
+    }
+    
+.formule{
+        width: 290px;
+    }
+    
+.free{
+        width: 290px;
+    }
+
+.info{
+        text-align: center;
+        color: #b1acdc;
+    }
+
+.info > a{
+    color: hsl(0, 100%, 74%);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+footer{ 
+    display: none;
+}
+    }
+    
+
+ 

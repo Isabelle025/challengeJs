@@ -5,32 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+  <script src="script.js" defer></script>
   <title>Frontend Mentor | Intro component with sign up form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
+<div class="container">
+  <div class="columns">
+  
+  
+    <div class="left">
+<id class="title">Learn to code by watching others</id>
+  <p class="paragraph">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+  but understanding how developers think is invaluable. </p>
+</div>
 
-  Learn to code by watching others
+<div class="right">
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
+ <p class="price">Try it free 7 days <span>then $20/mo. thereafter</span></p>
+ <div class="formulaire">
+  
 
-  Try it free 7 days then $20/mo. thereafter
+    <form>
+    <p><input class="formule" type="text" required pattern="[A-Za-z]+" minlength="3" name="pseudo" placeholder="First Name" required></p> 
+    <p><input class="formule" type="text" required pattern="[A-Za-z]+" name="pseudo2" placeholder="Last Name" required></p> 
+    <p><input class="formule" type="email" name="mail" placeholder="Email Address" required></p> 
+    <p><input class="formule" type="password" name="password" placeholder="Password" required></p>
 
-  First Name 
-  Last Name 
-  Email Address
-  Password
 
-  Claim your free trial 
+<div class="claim">
+  <p><input  class="free" type="submit" name="free" value="CLAIM YOUR FREE TRIAL" /></p>
+</div>
 
-  By clicking the button, you are agreeing to our Terms and Services
+  <p class="info">By clicking the button, you are agreeing to our <a href="https://google.com">Terms and Services</a></p>
+
+      </div>
+</form>
+</div>
+
+
   
   <footer>
     <p class="attribution">
@@ -38,5 +54,7 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+</div>
+</div>
 </body>
 </html>
